@@ -13731,6 +13731,7 @@ __metadata:
     "@backstage/theme": "npm:^0.5.7"
     "@material-ui/core": "npm:^4.12.2"
     "@material-ui/icons": "npm:^4.9.1"
+    "@mui/icons-material": "npm:^6.1.4"
     "@playwright/test": "npm:^1.32.3"
     "@testing-library/dom": "npm:^9.0.0"
     "@testing-library/jest-dom": "npm:^6.0.0"
