@@ -1,17 +1,18 @@
 import React, { PropsWithChildren } from 'react';
 import { makeStyles } from '@material-ui/core';
 import HomeIcon from '@material-ui/icons/Home';
+import CategoryIcon from '@material-ui/icons/Category';
 import ExtensionIcon from '@material-ui/icons/Extension';
 import LibraryBooks from '@material-ui/icons/LibraryBooks';
 import CreateComponentIcon from '@material-ui/icons/AddCircleOutline';
-import LogoFull from './LogoFull';
-import LogoIcon from './LogoIcon';
+import { LogoTipo } from '../logo/PlutoLogo';
 import {
   Settings as SidebarSettings,
   UserSettingsSignInAvatar,
 } from '@backstage/plugin-user-settings';
 import { SidebarSearchModal } from '@backstage/plugin-search';
 import {
+  Link,
   Sidebar,
   sidebarConfig,
   SidebarDivider,
@@ -20,8 +21,6 @@ import {
   SidebarPage,
   SidebarScrollWrapper,
   SidebarSpace,
-  useSidebarOpenState,
-  Link,
 } from '@backstage/core-components';
 import MenuIcon from '@material-ui/icons/Menu';
 import SearchIcon from '@material-ui/icons/Search';
@@ -45,12 +44,11 @@ const useSidebarLogoStyles = makeStyles({
 
 const SidebarLogo = () => {
   const classes = useSidebarLogoStyles();
-  const { isOpen } = useSidebarOpenState();
 
   return (
     <div className={classes.root}>
       <Link to="/" underline="none" className={classes.link} aria-label="Home">
-        {isOpen ? <LogoFull /> : <LogoIcon />}
+        <LogoTipo />
       </Link>
     </div>
   );
@@ -66,7 +64,8 @@ export const Root = ({ children }: PropsWithChildren<{}>) => (
       <SidebarDivider />
       <SidebarGroup label="Menu" icon={<MenuIcon />}>
         {/* Global nav, not org-specific */}
-        <SidebarItem icon={HomeIcon} to="catalog" text="Home" />
+        <SidebarItem icon={HomeIcon} to="/" text="Home" />
+        <SidebarItem icon={CategoryIcon} to="catalog" text="Catalog"/>
         <MyGroupsSidebarItem
           singularTitle="My Group"
           pluralTitle="My Groups"
