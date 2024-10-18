@@ -41,36 +41,38 @@ export default function HomePage() {
   const classes = useStyles();
   const {container} = useLogoStyles();
   return (
-    <SearchContextProvider >
+    <SearchContextProvider>
       <Page themeId="home">
         <Content>
           <Grid container justifyContent="center">
-            <HomePageCompanyLogo
-              className={container}
-              logo={<PlutoLogo/>}
-            />
+            <HomePageCompanyLogo className={container} logo={<PlutoLogo />} />
             <Grid container item xs={12} justifyContent="center">
               <HomePageSearchBar
-                InputProps={{ classes: { root: classes.searchBarInput, notchedOutline: classes.searchBarOutline }}}
+                InputProps={{
+                  classes: {
+                    root: classes.searchBarInput,
+                    notchedOutline: classes.searchBarOutline,
+                  },
+                }}
                 placeholder="Search"
               />
             </Grid>
             <Grid container item xs={12}>
               <Grid item xs={12} md={6}>
-                <HomePageStarredEntities/>
+                <HomePageStarredEntities />
               </Grid>
               <Grid item xs={12} md={6}>
                 <HomePageToolkit
                   tools={Array(4).fill({
                     url: '#',
-                    label: "link",
-                    icon: <TemplateBackstageLogoIcon/>
+                    label: 'link',
+                    icon: <TemplateBackstageLogoIcon />,
                   })}
                 />
               </Grid>
               <Grid item xs={12} md={6}>
                 <InfoCard title="Composable Section">
-                  <div style={{height: 370}}/>
+                  <div style={{ height: 370 }} />
                 </InfoCard>
               </Grid>
             </Grid>

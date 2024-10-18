@@ -38,6 +38,7 @@ import { RequirePermission } from '@backstage/plugin-permission-react';
 import { catalogEntityCreatePermission } from '@backstage/plugin-catalog-common/alpha';
 import { HomepageCompositionRoot } from '@backstage/plugin-home';
 import HomePage from './components/Homepage/HomePage';
+import { TechRadarPage } from '@backstage-community/plugin-tech-radar';
 
 const app = createApp({
   apis,
@@ -65,10 +66,22 @@ const app = createApp({
 
 const routes = (
   <FlatRoutes>
-    <Route path="/" element={<HomepageCompositionRoot/>} >
-      <HomePage/>
+    <Route path="/" element={<HomepageCompositionRoot />}>
+      <HomePage />
     </Route>
     <Route path="/catalog" element={<CatalogIndexPage />} />
+    <Route
+      path="/tech-radar"
+      element={
+        <TechRadarPage
+          width={1500}
+          height={800}
+          title="Pituxinhos Radar"
+          subtitle="Choose your techs wiselly and deal with the consequences"
+          pageTitle=""
+        />
+      }
+    />
     <Route
       path="/catalog/:namespace/:kind/:name"
       element={<CatalogEntityPage />}
