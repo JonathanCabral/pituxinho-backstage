@@ -79,8 +79,8 @@ export const Root = ({ children }: PropsWithChildren<{}>) => (
         {/* End global nav */}
         <SidebarDivider />
         <SidebarScrollWrapper>
-          <SidebarItem icon={RadarIcon} to="tech-radar" text="Tech Radar" />
           {/* Items in this group will be scrollable if they run out of space */}
+          <SidebarItem icon={() => <RadarIcon />} to="tech-radar" text="Tech Radar" />
         </SidebarScrollWrapper>
       </SidebarGroup>
       <SidebarSpace />

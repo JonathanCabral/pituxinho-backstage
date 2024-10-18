@@ -58,6 +58,7 @@ import {
   EntityKubernetesContent,
   isKubernetesAvailable,
 } from '@backstage/plugin-kubernetes';
+import { EntityTipsDialog } from '@dweber019/backstage-plugin-tips';
 
 const techdocsContent = (
   <EntityTechdocsContent>
@@ -123,6 +124,8 @@ const entityWarningContent = (
         </Grid>
       </EntitySwitch.Case>
     </EntitySwitch>
+
+    <EntityTipsDialog />
   </>
 );
 
@@ -258,6 +261,8 @@ const componentPage = (
     <EntitySwitch.Case>{defaultEntityPage}</EntitySwitch.Case>
   </EntitySwitch>
 );
+
+// TODO -> É AQUI QUE ADICIONAR AS CONFIGS PARA CRIAÇÃO DA PAGINA DE PROJETOS BATCH.
 
 const apiPage = (
   <EntityLayout>
