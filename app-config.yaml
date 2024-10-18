@@ -76,11 +76,92 @@ catalog:
     entityFilename: catalog-info.yaml
     pullRequestBranchName: backstage-integration
   rules:
-    - allow: [Component, System, API, Resource, Location]
+    - allow:
+        - Component
+        - API
+        - Resource
+        - System
+        - Domain
+        - Location
   locations:
-    # Local example data, file locations are relative to the backend process, typically `packages/backend`
+    # COMPONENTS
     - type: file
-      target: ../../examples/entities.yaml
+      target: ../../examples/components/artist-lookup-component.yaml
+    - type: file
+      target: ../../examples/components/petstore-component.yaml
+    - type: file
+      target: ../../examples/components/playback-lib-component.yaml
+    - type: file
+      target: ../../examples/components/playback-order-component.yaml
+    - type: file
+      target: ../../examples/components/podcast-api-component.yaml
+    - type: file
+      target: ../../examples/components/queue-proxy-component.yaml
+    - type: file
+      target: ../../examples/components/searcher-component.yaml
+    - type: file
+      target: ../../examples/components/shuffle-api-component.yaml
+    - type: file
+      target: ../../examples/components/wayback-archive-component.yaml
+    - type: file
+      target: ../../examples/components/wayback-archive-ingestion-component.yaml
+    - type: file
+      target: ../../examples/components/wayback-archive-storage-component.yaml
+    - type: file
+      target: ../../examples/components/wayback-search-component.yaml
+    - type: file
+      target: ../../examples/components/www-artist-component.yaml
+# APIS
+    - type: file
+      target: ../../examples/apis/hello-world-api.yaml
+    - type: file
+      target: ../../examples/apis/hello-world-trpc-api.yaml
+    - type: file
+      target: ../../examples/apis/petstore-api.yaml
+    - type: file
+      target: ../../examples/apis/petstore-webhook-api.yaml
+    - type: file
+      target: ../../examples/apis/spotify-api.yaml
+    - type: file
+      target: ../../examples/apis/streetlights-api.yaml
+    - type: file
+      target: ../../examples/apis/swapi-graphql.yaml
+    - type: file
+      target: ../../examples/apis/wayback-archive-api.yaml
+    - type: file
+      target: ../../examples/apis/wayback-search-api.yaml
+# ACME
+    - type: file
+      target: ../../examples/acme/backstage-group.yaml
+    - type: file
+      target: ../../examples/acme/boxoffice-group.yaml
+    - type: file
+      target: ../../examples/acme/infrastructure-group.yaml
+    - type: file
+      target: ../../examples/acme/org.yaml
+    - type: file
+      target: ../../examples/acme/team-a-group.yaml
+    - type: file
+      target: ../../examples/acme/team-b-group.yaml
+    - type: file
+      target: ../../examples/acme/team-c-group.yaml
+    - type: file
+      target: ../../examples/acme/team-d-group.yaml
+# domains
+    - type: file
+      target: ../../examples/domains/artists-domain.yaml
+    - type: file
+      target: ../../examples/domains/audio-domain.yaml
+#reousrces
+    - type: file
+      target: ../../examples/resources/artists-db-resource.yaml
+#systems
+    - type: file
+      target: ../../examples/systems/artist-engagement-portal-system.yaml
+    - type: file
+      target: ../../examples/systems/audio-playback-system.yaml
+    - type: file
+      target: ../../examples/systems/podcast-system.yaml
 
     # Local example template
     - type: file
