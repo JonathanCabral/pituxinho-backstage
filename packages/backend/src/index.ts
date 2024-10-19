@@ -51,4 +51,7 @@ backend.add(import('@backstage/plugin-search-backend-module-techdocs/alpha'));
 // kubernetes
 backend.add(import('@backstage/plugin-kubernetes-backend/alpha'));
 
+// ADR plugin
+backend.add(import('@backstage-community/plugin-adr-backend'));
+
 backend.start();
