@@ -18,21 +18,21 @@ import {
   EntityHasSystemsCard,
   EntityLayout,
   EntityLinksCard,
-  EntitySwitch,
   EntityOrphanWarning,
   EntityProcessingErrorsPanel,
+  EntityRelationWarning,
+  EntitySwitch,
+  hasCatalogProcessingErrors,
+  hasRelationWarnings,
   isComponentType,
   isKind,
-  hasCatalogProcessingErrors,
   isOrphan,
-  hasRelationWarnings,
-  EntityRelationWarning,
 } from '@backstage/plugin-catalog';
 import {
-  EntityUserProfileCard,
   EntityGroupProfileCard,
   EntityMembersListCard,
   EntityOwnershipCard,
+  EntityUserProfileCard,
 } from '@backstage/plugin-org';
 import { EntityTechdocsContent } from '@backstage/plugin-techdocs';
 import { EmptyState } from '@backstage/core-components';
@@ -59,7 +59,11 @@ import {
   isKubernetesAvailable,
 } from '@backstage/plugin-kubernetes';
 import { EntityTipsDialog } from '@dweber019/backstage-plugin-tips';
-import { EntityAdrContent, isAdrAvailable } from '@backstage-community/plugin-adr';
+import {
+  EntityAdrContent,
+  isAdrAvailable,
+} from '@backstage-community/plugin-adr';
+import { EntityChangelogCard } from '@rsc-labs/backstage-changelog-plugin';
 
 const techdocsContent = (
   <EntityTechdocsContent>
@@ -145,6 +149,9 @@ const overviewContent = (
     </Grid>
     <Grid item md={8} xs={12}>
       <EntityHasSubcomponentsCard variant="gridItem" />
+    </Grid>
+    <Grid item md={6} xs={6}>
+      <EntityChangelogCard />()
     </Grid>
   </Grid>
 );

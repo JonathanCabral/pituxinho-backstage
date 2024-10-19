@@ -44,6 +44,8 @@ yarn start # Inicia somente o frontend do portal
  - [x] ADRs Plugin
  - [x] Tech Radar Plugin (Zalando)
    - [ ] Analizar se é possível trocar para o da thoughworks
- - [ ] Tips Plugin (Legal de add no devportal do TCU)
+ - [X] Tips Plugin (Legal de add no devportal do TCU)
    - [ ] Tentar adicionar dicas customizadas, baseado nas necessidades do TCU. Como todos componentes precisam ter algumas anotações...
+ - [X] [Changelogs Plugin](https://github.com/RSC-Labs/backstage-changelog-plugin/blob/main/README.md)
+   - Configurado no componente artist-lookup
  

@@ -54,4 +54,8 @@ backend.add(import('@backstage/plugin-kubernetes-backend/alpha'));
 // ADR plugin
 backend.add(import('@backstage-community/plugin-adr-backend'));
 
+// ChangeLogs plugin
+// See https://github.com/RSC-Labs/backstage-changelog-plugin/blob/main/README.md
+backend.add(import('@rsc-labs/backstage-changelog-plugin-backend'));
+
 backend.start();
