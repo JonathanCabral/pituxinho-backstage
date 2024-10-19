@@ -3,6 +3,8 @@ kind: Component
 metadata:
   name: playback-order
   description: Playback Order
+  annotations:
+    backstage.io/adr-location: https://github.com/JonathanCabral/pituxinho-backstage/tree/main/examples/docs/ADRs
   tags:
     - java
     - playback

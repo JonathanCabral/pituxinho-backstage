@@ -3,6 +3,8 @@ kind: Component
 metadata:
   name: wayback-archive
   description: Archive of the wayback machine
+  annotations:
+    backstage.io/adr-location: https://github.com/JonathanCabral/pituxinho-backstage/tree/main/examples/docs/ADRs
 spec:
   type: service
   lifecycle: production

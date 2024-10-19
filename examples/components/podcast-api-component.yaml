@@ -3,6 +3,8 @@ kind: Component
 metadata:
   name: podcast-api
   description: Podcast API
+  annotations:
+    backstage.io/adr-location: https://github.com/JonathanCabral/pituxinho-backstage/tree/main/examples/docs/ADRs
   tags:
     - java
 spec:
