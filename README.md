@@ -31,18 +31,6 @@ yarn start # Inicia somente o frontend do portal
 - **Docker**: Para criação de containers e ambientes isolados.
 - **TypeScript** (opcional): Superconjunto de JavaScript que adiciona tipagem estática.
 
-## Funcionalidades previstas
-
-- Integração com APIs internas.
-- Criação de plugins customizados.
-  - Exemplo: Plugin para integração com o Azure Devops, para recuperar os cartões que os desenvolvedores trabalharam no mês.
-  - Integração com o Sonar, para recuperar as métricas de qualidade de código.
-  - Integração com o GitLab, para recuperar quantidade de linhas de código escritas, por desenvolvedor e por projeto, durante o mes corrente.
-- Gestão de serviços e ferramentas para desenvolvedores.
-- Autenticação e autorização de usuários.
-- Catálogo de plugins personalizados.
-- Dashboard com informações sobre o estado dos serviços.
-
 ## Estrutura do Projeto
 
 - `packages/backend/`: Código do backend do portal, utilizando Node.js.
@@ -52,25 +40,10 @@ yarn start # Inicia somente o frontend do portal
 
 ## Status da Versão Atual
 
-### Funcionalidades Implementadas
-
-- **Configuração inicial do Backstage**: Projeto configurado com o básico do Backstage.
-- **Estrutura de backend e frontend**: Pastas e dependências iniciais para backend com Node.js e frontend com React.
-- **Docker para ambientes isolados**: Configurações de Docker para facilitar o desenvolvimento local.
-- **Plugins padrões do Backstage**: Uso dos plugins nativos do Backstage para gestão de serviços e ferramentas de desenvolvedor.
-- **Autenticação básica**: Configuração inicial de autenticação para controle de acesso.
-
-### Melhorias e Funcionalidades Futuras
-
-- **Integração com APIs externas**: Conectar o portal com serviços externos para buscar e exibir dados relevantes.
-- **Criação de plugins customizados**: Desenvolvimento de plugins sob medida para necessidades específicas do portal.
-- **Painel de monitoramento**: Dashboard para exibir o status em tempo real dos serviços e ferramentas.
-- **Sistema de permissões avançado**: Implementar autorização granular para diferentes níveis de usuário.
-- **Temas personalizados**: Adicionar suporte a temas e branding customizados para o portal.
-- **Documentação detalhada**: Criar documentação completa para desenvolvedores que queiram contribuir ou utilizar o projeto.
-
-### Roadmap
-
-- [ ] Explorar plugins adicionais do Backstage.
-- [ ] Melhorar a estrutura de autenticação.
-- [ ] Adicionar suporte a Kubernetes para deploy e gerenciamento de serviços.
+### Plugins Adicionados
+ - [x] ADRs Plugin
+ - [x] Tech Radar Plugin (Zalando)
+   - [ ] Analizar se é possível trocar para o da thoughworks
+ - [ ] Tips Plugin (Legal de add no devportal do TCU)
+   - [ ] Tentar adicionar dicas customizadas, baseado nas necessidades do TCU. Como todos componentes precisam ter algumas anotações...
+ 
