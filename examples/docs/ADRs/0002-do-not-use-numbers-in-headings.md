@@ -1,8 +1,10 @@
 ---
-parent: Decisions
-nav_order: 2
+status: "proposed"
+date: 2021-11-30
+decision-makers: "Steve Harris"
 ---
-# Do Not Use Numbers in Headings
+
+# ADR 0002: Do Not Use Numbers in Headings
 
 ## Context and Problem Statement
 

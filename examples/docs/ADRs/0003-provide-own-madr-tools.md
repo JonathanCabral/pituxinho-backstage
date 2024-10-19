@@ -1,9 +1,10 @@
 ---
-parent: Decisions
-nav_order: 3
-status: on hold
+status: "rejected"
+date: 2021-11-30
+decision-makers: "Jonathan Cabral"
 ---
-# Write Own MADR Tooling
+
+# ADR 0003: Write Own MADR Tooling
 
 ## Context and Problem Statement
 

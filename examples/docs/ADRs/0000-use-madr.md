@@ -1,8 +1,10 @@
 ---
-parent: Decisions
-nav_order: 0
+status: "accepted"
+date: 2021-11-30
+decision-makers: "Jonathan Cabral"
 ---
-# Use Markdown Architectural Decision Records
+
+# ADR 0000: Use Markdown Architectural Decision Records
 
 ## Context and Problem Statement
 

@@ -1,8 +1,10 @@
 ---
-parent: Decisions
-nav_order: 8
+status: "deprecated"
+date: 2021-11-30
+decision-makers: "Bruce Dickinson"
 ---
-# Add Status Field
+
+# ADR 0008: Add Status Field
 
 ## Context and Problem Statement
 

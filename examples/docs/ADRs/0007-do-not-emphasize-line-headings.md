@@ -1,8 +1,10 @@
 ---
-parent: Decisions
-nav_order: 7
+status: "proposed"
+date: 2021-11-30
+decision-makers: "Luana Dametto"
 ---
-# Do Not Emphasize Line Headings
+
+# ADR 0007: Do Not Emphasize Line Headings
 
 ## Context and Problem Statement
 

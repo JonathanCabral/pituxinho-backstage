@@ -1,8 +1,10 @@
 ---
-parent: Decisions
-nav_order: 4
+status: "deprecated"
+date: 2021-11-30
+decision-makers: "Lemmy Kilmister"
 ---
-# Write Own TOC Tool
+
+# ADR 0004: Write Own TOC Tool
 
 ## Context and Problem Statement
 

@@ -1,8 +1,10 @@
 ---
-parent: Decisions
-nav_order: 5
+status: "superseded by"
+date: 2021-11-30
+decision-makers: "Ozzy Osbourne"
 ---
-# Use Dashes in Filenames
+
+# ADR 0005: Use Dashes in Filenames
 
 ## Context and Problem Statement
 

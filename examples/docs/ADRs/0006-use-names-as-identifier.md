@@ -1,8 +1,10 @@
 ---
-parent: Decisions
-nav_order: 6
+status: "accepted"
+date: 2021-11-30
+decision-makers: "Eloy Casagrande"
 ---
-# Use Names as Identifier
+
+# ADR 0006: Use Names as Identifier
 
 ## Context and Problem Statement
 
