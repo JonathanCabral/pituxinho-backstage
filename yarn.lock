@@ -2758,6 +2758,34 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@backstage-community/plugin-adr@npm:^0.6.27":
+  version: 0.6.27
+  resolution: "@backstage-community/plugin-adr@npm:0.6.27"
+  dependencies:
+    "@backstage-community/plugin-adr-common": "npm:^0.2.30"
+    "@backstage/catalog-model": "npm:^1.7.0"
+    "@backstage/core-compat-api": "npm:^0.3.1"
+    "@backstage/core-components": "npm:^0.15.1"
+    "@backstage/core-plugin-api": "npm:^1.10.0"
+    "@backstage/frontend-plugin-api": "npm:^0.9.0"
+    "@backstage/integration-react": "npm:^1.2.0"
+    "@backstage/plugin-auth-react": "npm:^0.1.7"
+    "@backstage/plugin-catalog-react": "npm:^1.14.0"
+    "@backstage/plugin-search-common": "npm:^1.2.14"
+    "@backstage/plugin-search-react": "npm:^1.8.1"
+    "@material-ui/core": "npm:^4.12.2"
+    "@material-ui/icons": "npm:^4.9.1"
+    "@types/react": "npm:^16.13.1 || ^17.0.0 || ^18.0.0"
+    lodash: "npm:^4.17.21"
+    react-use: "npm:^17.2.4"
+  peerDependencies:
+    react: ^16.13.1 || ^17.0.0 || ^18.0.0
+    react-dom: ^16.13.1 || ^17.0.0 || ^18.0.0
+    react-router-dom: 6.0.0-beta.0 || ^6.3.0
+  checksum: 10c0/3fbab71af3ac556725e97767ec3ad77f9c1eb4f2d85bc0569cbf49e8bcca994ad539bee9096cbc47e1643eb272206513d2166db39548a8068a87fd655b2c3504
+  languageName: node
+  linkType: hard
+
 "@backstage-community/plugin-tech-radar@npm:^0.7.10":
   version: 0.7.10
   resolution: "@backstage-community/plugin-tech-radar@npm:0.7.10"
@@ -4503,6 +4531,27 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@backstage/plugin-auth-react@npm:^0.1.7":
+  version: 0.1.7
+  resolution: "@backstage/plugin-auth-react@npm:0.1.7"
+  dependencies:
+    "@backstage/core-components": "npm:^0.15.1"
+    "@backstage/core-plugin-api": "npm:^1.10.0"
+    "@backstage/errors": "npm:^1.2.4"
+    "@material-ui/core": "npm:^4.9.13"
+    "@react-hookz/web": "npm:^24.0.0"
+  peerDependencies:
+    "@types/react": ^16.13.1 || ^17.0.0 || ^18.0.0
+    react: ^16.13.1 || ^17.0.0 || ^18.0.0
+    react-dom: ^16.13.1 || ^17.0.0 || ^18.0.0
+    react-router-dom: 6.0.0-beta.0 || ^6.3.0
+  peerDependenciesMeta:
+    "@types/react":
+      optional: true
+  checksum: 10c0/48e591dbd08fe1ccfe2f7ba5ebe9500e824e8d0842efb9d1bbeb74480ac521d246a5ec69a0ec10cf4ef387bae19cd428d7cadd61bdd4e6bad0b622eacaec872c
+  languageName: node
+  linkType: hard
+
 "@backstage/plugin-bitbucket-cloud-common@npm:^0.2.23":
   version: 0.2.23
   resolution: "@backstage/plugin-bitbucket-cloud-common@npm:0.2.23"
@@ -5693,6 +5742,35 @@ __metadata:
     react-dom: ^16.13.1 || ^17.0.0 || ^18.0.0
     react-router-dom: 6.0.0-beta.0 || ^6.3.0
   checksum: 10c0/a259cde7adc41c70153a1f8fcd3cbde1fcb19f276d6436bfe81d647da2a0d2d59ea1eb28f7239d07f54dcb398e07f85a0e24c53caf79c02ce1d16daec551aa43
+  languageName: node
+  linkType: hard
+
+"@backstage/plugin-search-react@npm:^1.8.1":
+  version: 1.8.1
+  resolution: "@backstage/plugin-search-react@npm:1.8.1"
+  dependencies:
+    "@backstage/core-components": "npm:^0.15.1"
+    "@backstage/core-plugin-api": "npm:^1.10.0"
+    "@backstage/frontend-plugin-api": "npm:^0.9.0"
+    "@backstage/plugin-search-common": "npm:^1.2.14"
+    "@backstage/theme": "npm:^0.6.0"
+    "@backstage/types": "npm:^1.1.1"
+    "@backstage/version-bridge": "npm:^1.0.10"
+    "@material-ui/core": "npm:^4.12.2"
+    "@material-ui/icons": "npm:^4.9.1"
+    "@material-ui/lab": "npm:4.0.0-alpha.61"
+    lodash: "npm:^4.17.21"
+    qs: "npm:^6.9.4"
+    react-use: "npm:^17.3.2"
+  peerDependencies:
+    "@types/react": ^16.13.1 || ^17.0.0 || ^18.0.0
+    react: ^16.13.1 || ^17.0.0 || ^18.0.0
+    react-dom: ^16.13.1 || ^17.0.0 || ^18.0.0
+    react-router-dom: 6.0.0-beta.0 || ^6.3.0
+  peerDependenciesMeta:
+    "@types/react":
+      optional: true
+  checksum: 10c0/224580f50af2d24223477f55bb858ca32624ff6057dc8594ce46a0157484a35e945f2e9663cf7285669f806061f3b7ed193102449d17f63dcb2db25d5d0ed972
   languageName: node
   linkType: hard
 
@@ -14144,6 +14222,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "app@workspace:packages/app"
   dependencies:
+    "@backstage-community/plugin-adr": "npm:^0.6.27"
     "@backstage-community/plugin-tech-radar": "npm:^0.7.10"
     "@backstage/app-defaults": "npm:^1.5.11"
     "@backstage/catalog-model": "npm:^1.7.0"

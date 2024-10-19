@@ -31,6 +31,7 @@ metadata:
   annotations:
     backstage.io/source-template: template:default/springboot-template
     backstage.io/linguist: 'https://github.com/backstage/backstage/tree/master/plugins/playlist'
+    backstage.io/adr-location: https://github.com/JonathanCabral/pituxinho-backstage/tree/main/examples/docs/ADRs
 spec:
   type: service
   lifecycle: experimental
