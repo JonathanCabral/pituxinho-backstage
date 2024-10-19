@@ -48,4 +48,11 @@ yarn start # Inicia somente o frontend do portal
    - [ ] Tentar adicionar dicas customizadas, baseado nas necessidades do TCU. Como todos componentes precisam ter algumas anotações...
  - [X] [Changelogs Plugin](https://github.com/RSC-Labs/backstage-changelog-plugin/blob/main/README.md)
    - Configurado no componente artist-lookup
+ - [X] [Entity Validator](https://github.com/backstage/community-plugins/tree/main/workspaces/entity-validation/plugins/entity-validation)
+ - [ ] [Dev Tools](https://github.com/backstage/backstage/tree/master/plugins/devtools)
+
+### Integrações
+ - [ ] Integração com o Sonar
+ - [ ] AD
+ - [ ] Integração com o GitLab
  

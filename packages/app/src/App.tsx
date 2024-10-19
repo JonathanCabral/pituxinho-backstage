@@ -39,6 +39,7 @@ import { catalogEntityCreatePermission } from '@backstage/plugin-catalog-common/
 import { HomepageCompositionRoot } from '@backstage/plugin-home';
 import HomePage from './components/Homepage/HomePage';
 import { TechRadarPage } from '@backstage-community/plugin-tech-radar';
+import { EntityValidationPage } from '@backstage-community/plugin-entity-validation';
 
 const app = createApp({
   apis,
@@ -112,6 +113,7 @@ const routes = (
     </Route>
     <Route path="/settings" element={<UserSettingsPage />} />
     <Route path="/catalog-graph" element={<CatalogGraphPage />} />
+    <Route path="/entity-validation" element={<EntityValidationPage />} />
   </FlatRoutes>
 );
 

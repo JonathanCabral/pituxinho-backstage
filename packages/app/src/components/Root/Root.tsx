@@ -4,6 +4,7 @@ import HomeIcon from '@material-ui/icons/Home';
 import RadarIcon from '@mui/icons-material/Radar';
 import CategoryIcon from '@material-ui/icons/Category';
 import ExtensionIcon from '@material-ui/icons/Extension';
+import BuildIcon from '@material-ui/icons/Build';
 import LibraryBooks from '@material-ui/icons/LibraryBooks';
 import CreateComponentIcon from '@material-ui/icons/AddCircleOutline';
 import { LogoTipo } from '../logo/PlutoLogo';
@@ -81,6 +82,7 @@ export const Root = ({ children }: PropsWithChildren<{}>) => (
         <SidebarScrollWrapper>
           {/* Items in this group will be scrollable if they run out of space */}
           <SidebarItem icon={() => <RadarIcon />} to="tech-radar" text="Tech Radar" />
+          <SidebarItem icon={BuildIcon} to="entity-validation" text="Validator" />
         </SidebarScrollWrapper>
       </SidebarGroup>
       <SidebarSpace />

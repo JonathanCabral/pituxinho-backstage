@@ -2786,6 +2786,37 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@backstage-community/plugin-entity-validation@npm:^0.2.2":
+  version: 0.2.2
+  resolution: "@backstage-community/plugin-entity-validation@npm:0.2.2"
+  dependencies:
+    "@backstage/catalog-client": "npm:^1.7.1"
+    "@backstage/catalog-model": "npm:^1.7.0"
+    "@backstage/core-components": "npm:^0.15.1"
+    "@backstage/core-plugin-api": "npm:^1.10.0"
+    "@backstage/errors": "npm:^1.2.4"
+    "@backstage/plugin-catalog-common": "npm:^1.1.0"
+    "@backstage/plugin-catalog-react": "npm:^1.14.0"
+    "@codemirror/language": "npm:^6.0.0"
+    "@codemirror/legacy-modes": "npm:^6.1.0"
+    "@codemirror/view": "npm:^6.0.0"
+    "@material-ui/core": "npm:^4.12.2"
+    "@material-ui/icons": "npm:^4.9.1"
+    "@material-ui/lab": "npm:4.0.0-alpha.61"
+    "@react-hookz/web": "npm:^24.0.0"
+    "@types/react": "npm:^16.13.1 || ^17.0.0 || ^18.0.0"
+    "@uiw/react-codemirror": "npm:^4.9.3"
+    lodash: "npm:^4.17.21"
+    react-use: "npm:^17.2.4"
+    yaml: "npm:^2.0.0"
+  peerDependencies:
+    react: ^16.13.1 || ^17.0.0 || ^18.0.0
+    react-dom: ^16.13.1 || ^17.0.0 || ^18.0.0
+    react-router-dom: 6.0.0-beta.0 || ^6.3.0
+  checksum: 10c0/5b997890e3ba24b12521d46447876ab9959486ef972aa6aebfed077b6560ae29e3e47866eb218e9ca266428fdfc486a7e2e9be3d5082ace5eb3314d6e19eafdf
+  languageName: node
+  linkType: hard
+
 "@backstage-community/plugin-tech-radar@npm:^0.7.10":
   version: 0.7.10
   resolution: "@backstage-community/plugin-tech-radar@npm:0.7.10"
@@ -14520,6 +14551,7 @@ __metadata:
   resolution: "app@workspace:packages/app"
   dependencies:
     "@backstage-community/plugin-adr": "npm:^0.6.27"
+    "@backstage-community/plugin-entity-validation": "npm:^0.2.2"
     "@backstage-community/plugin-tech-radar": "npm:^0.7.10"
     "@backstage/app-defaults": "npm:^1.5.11"
     "@backstage/catalog-model": "npm:^1.7.0"
