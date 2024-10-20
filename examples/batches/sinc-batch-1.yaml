@@ -1,0 +1,19 @@
+apiVersion: backstage.io/v1alpha1
+kind: Batch
+metadata:
+  name: sinc-batch-1
+  description: Aplicação batch de teste
+  tags:
+    - kotlin
+    - batch
+    - ad
+  links:
+    - url: https://github.com/JonathanCabral/pituxinho-backstage/blob/main/examples/components/playback-order-component.yaml
+      title: Github (Prod)
+      icon: Github
+spec:
+  type: batch
+  lifecycle: production
+  owner: group:team-a
+  domain: domain:artists
+  system: system:artist-engagement-portal
