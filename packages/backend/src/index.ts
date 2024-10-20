@@ -58,4 +58,12 @@ backend.add(import('@backstage-community/plugin-adr-backend'));
 // See https://github.com/RSC-Labs/backstage-changelog-plugin/blob/main/README.md
 backend.add(import('@rsc-labs/backstage-changelog-plugin-backend'));
 
+// DevTools plugin
+// see https://github.com/backstage/backstage/tree/master/plugins/devtools
+backend.add(import('@backstage/plugin-devtools-backend'));
+
+// Unprocessed Entities plugin
+// see https://github.com/backstage/backstage/tree/master/plugins/catalog-unprocessed-entities
+backend.add(import('@backstage/plugin-catalog-backend-module-unprocessed'));
+
 backend.start();

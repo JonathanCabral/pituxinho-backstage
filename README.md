@@ -49,7 +49,12 @@ yarn start # Inicia somente o frontend do portal
  - [X] [Changelogs Plugin](https://github.com/RSC-Labs/backstage-changelog-plugin/blob/main/README.md)
    - Configurado no componente artist-lookup
  - [X] [Entity Validator](https://github.com/backstage/community-plugins/tree/main/workspaces/entity-validation/plugins/entity-validation)
- - [ ] [Dev Tools](https://github.com/backstage/backstage/tree/master/plugins/devtools)
+ - [X] Dev Tools (Aba encontra se dentro do devtools)
+   - **IMPORTANT** Caso vá subir para produção, é necessário configurar dockerfile
+   - [ ] **IMPORTANT** Deve ser feito configurações de acesso (Permission Policy)
+   - [Frontend config](https://github.com/backstage/backstage/tree/master/plugins/devtools)
+   - [Backend config](https://github.com/backstage/backstage/blob/master/plugins/devtools-backend/README.md)
+   - **Entity validation** foi movido para dentro do devtools
 
 ### Integrações
  - [ ] Integração com o Sonar

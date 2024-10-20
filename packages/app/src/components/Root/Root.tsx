@@ -82,7 +82,7 @@ export const Root = ({ children }: PropsWithChildren<{}>) => (
         <SidebarScrollWrapper>
           {/* Items in this group will be scrollable if they run out of space */}
           <SidebarItem icon={() => <RadarIcon />} to="tech-radar" text="Tech Radar" />
-          <SidebarItem icon={BuildIcon} to="entity-validation" text="Validator" />
+          {/*<SidebarItem icon={BuildIcon} to="entity-validation" text="Validator" />*/}
         </SidebarScrollWrapper>
       </SidebarGroup>
       <SidebarSpace />
@@ -92,6 +92,7 @@ export const Root = ({ children }: PropsWithChildren<{}>) => (
         icon={<UserSettingsSignInAvatar />}
         to="/settings"
       >
+        <SidebarItem icon={BuildIcon} to="devtools" text="Devtools" />
         <SidebarSettings />
       </SidebarGroup>
     </Sidebar>
