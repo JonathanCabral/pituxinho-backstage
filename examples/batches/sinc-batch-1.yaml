@@ -13,7 +13,8 @@ metadata:
       icon: Github
 spec:
   type: batch
-  lifecycle: production
-  owner: group:team-a
-  domain: domain:artists
-  system: system:artist-engagement-portal
+  lifecycle: experimental
+  owner: team-a
+  system: artist-engagement-portal
+  dependsOn: [ 'resource:artists-db' ]
+  apiConsumedBy: [ 'component:www-artist' ]
